@@ -1,0 +1,166 @@
+.container-principal {
+    background-color: var(--soft-dark-escura);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--soft-dark-media);
+    width: 310px;
+    height: 535px;
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+
+.card .imagem-card {
+    display: flex;
+    position: relative;
+   
+}
+
+.card .imagem-card .imagem{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card .link-imagem {
+    display: flex;
+    position: relative;
+}
+
+.card .link-imagem::before {
+    content: '';
+    background-color: var(--soft-cor-clara);
+    width: 100%;    
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    display: none;
+    transition: all .3s ease-in-out;
+    
+}
+
+.card .imagem-card .link-imagem::after {
+    content: '';
+    background: url(../Images/icon-view.svg) no-repeat center center;
+    width: 100%;    
+    height: 100%;
+    position: absolute;
+    display: none;
+    transition: all .3s ease-in-out;
+}
+
+.link-imagem:hover::before {
+    display: block;
+    cursor: pointer;
+    opacity: .3;
+}
+
+.imagem-card .link-imagem:hover::after {
+    display: block;
+    cursor: pointer;
+}
+
+
+.card .informacoes-card .titulo {
+    color: white;
+    font-weight: 600;
+    font-size: 1.9rem;
+    margin-bottom: 15px;
+}
+
+.card .informacoes-card .titulo:hover {
+    color: var(--soft-cor-clara);
+    cursor: pointer;
+}
+
+.card .informacoes-card .descricao {
+    color: var(--soft-cor-escura);
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.card .valores-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 18px;
+    border-bottom: solid white 1px;
+}
+
+.card .valores-data .valor {
+    color: var(--soft-cor-clara);
+    font-weight: 600;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.card .valores-data .valor::before {
+    content: '';
+    background: url(../Images/icon-ethereum.svg) no-repeat center;
+    width: 11px;
+    height: 16px;
+    display: inline-block;
+    align-self: center;
+    margin-right: 5px;
+}
+
+
+.card .valores-data .data {
+    color: var(--soft-cor-escura);
+    font-weight: 400;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.card .valores-data .data::before {
+    content: '';
+    background: url(../Images/icon-clock.svg) no-repeat center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.card .criador {
+    display: flex;
+    align-items: center;
+}
+
+.card .criador .avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    margin-right: 10px;
+    border: solid white 1px;
+}
+
+.card .criador .nome {
+    color: var(--soft-cor-escura);
+    font-weight: 300;
+    font-size: 1.6rem;
+}  
+
+.card .criador .nome-criador {
+    color: white;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.card .criador .nome-criador:hover {
+    color: var(--soft-cor-clara);
+    cursor: pointer;
+}   

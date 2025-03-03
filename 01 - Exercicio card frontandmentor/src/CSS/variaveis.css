@@ -1,0 +1,10 @@
+:root {
+    --soft-cor-escura: hsl(215, 51%, 70%);
+    --soft-cor-clara: hsl(178, 100%, 50%);
+}
+
+:root {
+    --soft-dark-escura:hsl(217, 54%, 11%);
+    --soft-dark-media:hsl(216, 50%, 16%);
+    --soft-dark-clara:hsl(215, 32%, 27%);
+}  
